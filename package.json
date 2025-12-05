@@ -1,0 +1,28 @@
+{
+  "name": "imagen-ai-gemini",
+  "version": "1.0.0",
+  "description": "Professional Text-to-Image Generation Studio powered by Google Gemini",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "react",
+    "gemini",
+    "ai",
+    "image-generation",
+    "google-genai"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "@google/genai": "^0.1.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}

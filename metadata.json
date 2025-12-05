@@ -1,0 +1,5 @@
+{
+  "name": "Copy of Imagen AI",
+  "description": "A professional-grade text-to-image generation studio powered by Google Gemini (Flash & Pro), featuring request queuing and client-side validation.",
+  "requestFramePermissions": []
+}

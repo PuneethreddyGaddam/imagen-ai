@@ -2,27 +2,27 @@
   "name": "imagen-ai-gemini",
   "version": "1.0.0",
   "description": "Professional Text-to-Image Generation Studio powered by Google Gemini",
-  "main": "server.js",
+  "type": "module",
   "scripts": {
-    "start": "node server.js",
-    "dev": "node server.js"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "vite preview --port 3000"
   },
-  "keywords": [
-    "react",
-    "gemini",
-    "ai",
-    "image-generation",
-    "google-genai"
-  ],
-  "author": "",
-  "license": "MIT",
   "dependencies": {
-    "cors": "^2.8.5",
-    "dotenv": "^16.4.5",
-    "express": "^4.19.2",
-    "@google/genai": "^0.1.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "@google/genai": "^0.1.0",
+    "lucide-react": "^0.344.0",
+    "zod": "^3.22.4",
+    "clsx": "^2.1.0",
+    "tailwind-merge": "^2.2.1"
   },
   "devDependencies": {
-    "tailwindcss": "^3.4.1"
+    "@types/react": "^18.2.64",
+    "@types/react-dom": "^18.2.21",
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^5.1.6",
+    "typescript": "^5.2.2"
   }
 }

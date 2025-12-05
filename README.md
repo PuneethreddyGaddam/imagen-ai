@@ -14,9 +14,9 @@ A professional-grade, React-based image generation application powered exclusive
 
 ## 🛠️ Tech Stack
 
-*   **Frontend**: React 19, Tailwind CSS, Lucide Icons
+*   **Frontend**: React 18, Tailwind CSS, Lucide Icons
+*   **Build Tool**: Vite
 *   **AI Engine**: Google GenAI SDK (`@google/genai`)
-*   **Build/Runtime**: ES Modules (No-build setup capable) or Node.js via Express
 
 ## 📦 Installation & Setup
 
@@ -35,20 +35,27 @@ A professional-grade, React-based image generation application powered exclusive
     Create a `.env` file in the root directory and add your Google Gemini API Key:
     ```env
     API_KEY=your_google_gemini_api_key_here
-    PORT=3000
     ```
 
-4.  **Run the Application**
+4.  **Run Development Server**
     ```bash
-    npm start
+    npm run dev
     ```
     Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## 🔑 Authentication
+## ☁️ Deployment Guide
 
-The application currently uses a **simulated authentication service** for demonstration purposes.
-*   Click **Continue with Google** or **Continue with LinkedIn**.
-*   The app mimics a network request and logs you in as a demo user.
+The easiest way to deploy this application is using **Vercel**.
+
+1.  **Push to GitHub**: Make sure your code is pushed to a GitHub repository.
+2.  **Sign up for Vercel**: Go to [vercel.com](https://vercel.com) and sign up.
+3.  **Import Project**: Click "Add New Project" and select your GitHub repository.
+4.  **Configure Project**:
+    *   **Framework Preset**: Select `Vite`.
+    *   **Environment Variables**: Add a new variable named `API_KEY` and paste your Google Gemini API key as the value.
+5.  **Deploy**: Click "Deploy".
+
+Vercel will build your application and provide you with a live URL.
 
 ## 🤖 Models Used
 

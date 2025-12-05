@@ -1,5 +1,5 @@
 
-import { GoogleGenAI } from "@google/genai";
+import { GoogleGenerativeAI } from "@google/generative-ai";
 import { ModelType, AspectRatio } from "../types";
 
 // Note: process.env.API_KEY is injected by the environment
@@ -19,7 +19,7 @@ export const generateImageWithGemini = async ({
   aspectRatio
 }: GenerateImageParams): Promise<string> => {
   // Initialize the API client inside the function to ensure the latest API key is used
-  const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+  const ai = new GoogleGenerativeAI({ apiKey: process.env.API_KEY });
 
   try {
     // Configure based on model capabilities
